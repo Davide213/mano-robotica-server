@@ -28,8 +28,8 @@ def home():
 @app.post("/ask")
 async def ask_ai(data: RichiestaMano):
     try:
-        # Usiamo il modello 'gemini-1.5-flash', è velocissimo ed ottimale per questi scopi
-        model = genai.GenerativeModel('gemini-2.5-flash')
+        # Usiamo il modello 'gemini-3.5-flash', è velocissimo ed ottimale per questi scopi
+        model = genai.GenerativeModel('gemini-3.5-flash')
         
         # Creiamo le istruzioni di sistema (System Prompt) per dare carattere all'IA
         system_instruction = (
