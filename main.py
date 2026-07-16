@@ -6,7 +6,7 @@ import google.generativeai as genai
 app = FastAPI()
 
 # Recupera la chiave API dalle variabili d'ambiente (la imposteremo su Render)
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("AQ.Ab8RN6KWHIMjNf8pvyxnYwzKqiFGwBSjE1Rlome5NSVvSC-F4Q")
 if not api_key:
     # Se non trova la chiave locale (es. nei test sul PC), puoi metterne una di test qui
     # genai.configure(api_key="TUA_CHIAVE_DI_TEST")
