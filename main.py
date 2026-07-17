@@ -45,9 +45,9 @@ async def ask_ai(data: RichiestaMano):
         prompt_completo = f"{system_instruction}\n\nUtente: {data.domanda}\nMANO:"
         
         # Generiamo la risposta
-        response = model.generate_content(prompt_completo)
+        risposta = model.generate_content(prompt_completo)
         
-        return {"risposta": response.text}
+        return {"risposta": risposta.text}
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Errore del server: {str(e)}")
